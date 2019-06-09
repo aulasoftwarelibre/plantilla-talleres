@@ -1,0 +1,60 @@
+site_name: "Plantilla de talleres"
+site_author: "Aula de Software Libre <aulasoftwarelibre@uco.es>"
+site_description: "Plantilla para crear documentación de los talleres del aula"
+repo_name: "aulasoftwarelibre/plantilla-talleres"
+repo_url: "https://github.com/aulasoftwarelibre/plantilla-talleres.git"
+
+theme:
+  name: "material"
+  language: "es"
+  logo: "images/pinhuevo-blanco.svg"
+  favicon: "images/logoasl.png"
+
+extra_css: [extra.css]
+extra:
+  social:
+    - type: "github"
+      link: "https://github.com/aulasoftwarelibre"
+    - type: "twitter"
+      link: "https://twitter.com/aulasl"
+    - type: "facebook"
+      link: "https://facebook.com/aulasoftwarelibre"
+    - type: "instagram"
+      link: "https://instagram.com/aulasoftwarelibre"
+  feature:
+    tabs: true
+
+markdown_extensions:
+  - admonition: ~
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list: ~
+  - footnotes: ~
+  - mdx_inline_graphviz: ~
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Inicio: index.md
+#
+# Google Analytics
+# google_analytics:
+#   - "UA-51754922-1"
+#   - "auto"
