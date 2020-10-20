@@ -4,11 +4,8 @@ site_description: "Plantilla para crear documentación de los talleres del aula"
 repo_name: "aulasoftwarelibre/plantilla-talleres"
 repo_url: "https://github.com/aulasoftwarelibre/plantilla-talleres.git"
 
-theme:
-  name: "material"
-  language: "es"
+icon:
   logo: "images/pinhuevo-blanco.svg"
-  favicon: "images/logoasl.png"
 
 extra_css: [extra.css]
 extra:
