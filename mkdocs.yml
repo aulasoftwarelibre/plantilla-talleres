@@ -1,60 +1,61 @@
 site_name: "Plantilla de talleres"
 site_author: "Aula de Software Libre <aulasoftwarelibre@uco.es>"
 site_description: "Plantilla para crear documentación de los talleres del aula"
+site_url: "https://github.com/aulasoftwarelibre/plantilla-talleres.git"
+
 repo_name: "aulasoftwarelibre/plantilla-talleres"
 repo_url: "https://github.com/aulasoftwarelibre/plantilla-talleres.git"
 
+copyright: Copyleft - CC BY-NC 4.0 - Aula de Software Libre
+
 theme:
+  favicon: "images/logoasl.png"
+  features:
+    - navigation.instant
+  icon:
+    logo: material/git
   name: "material"
   language: "es"
-  logo: "images/pinhuevo-blanco.svg"
-  favicon: "images/logoasl.png"
+  palette:
+    - scheme: slate
+      accent: indigo
 
-extra_css: [extra.css]
+plugins:
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+  - search
+
+extra_css:
+  - stylesheets/extra.css
 extra:
   social:
-    - type: "github"
+    - icon: fontawesome/brands/github
       link: "https://github.com/aulasoftwarelibre"
-    - type: "twitter"
+    - icon: fontawesome/brands/twitter
       link: "https://twitter.com/aulasl"
-    - type: "facebook"
-      link: "https://facebook.com/aulasoftwarelibre"
-    - type: "instagram"
+    - icon: fontawesome/brands/facebook
+      link: "https://facebook.com/aulasl"
+    - icon: fontawesome/brands/instagram
       link: "https://instagram.com/aulasoftwarelibre"
-  feature:
-    tabs: true
+    - icon: fontawesome/brands/youtube
+      link: "https://www.youtube.com/c/AulaSoftwareLibre"
 
 markdown_extensions:
   - admonition: ~
+  - attr_list: ~
   - codehilite:
       guess_lang: false
       linenums: true
   - def_list: ~
   - footnotes: ~
-  - mdx_inline_graphviz: ~
   - toc:
       permalink: true
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
+  - pymdownx.keys: ~
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
-nav:
-  - Inicio: index.md
-#
-# Google Analytics
-# google_analytics:
-#   - "UA-51754922-1"
-#   - "auto"
+google_analytics:
+  - "UA-51754922-1"
+  - "auto"

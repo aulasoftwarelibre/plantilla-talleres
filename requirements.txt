@@ -1,6 +1,7 @@
 mkdocs
+mkdocs-awesome-pages-plugin
+mkdocs-git-revision-date-localized-plugin
 mkdocs-material
 mkdocs-pandoc
-Markdown
-markdown-inline-graphviz
+markdown
 pymdown-extensions
