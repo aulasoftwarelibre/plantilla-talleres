@@ -1,10 +1,10 @@
 site_name: "Plantilla de talleres"
 site_author: "Aula de Software Libre <aulasoftwarelibre@uco.es>"
 site_description: "Plantilla para crear documentación de los talleres del aula"
-site_url: "https://github.com/aulasoftwarelibre/plantilla-talleres.git"
+site_url: "https://github.com/aulasoftwarelibre/plantilla-talleres"
 
 repo_name: "aulasoftwarelibre/plantilla-talleres"
-repo_url: "https://github.com/aulasoftwarelibre/plantilla-talleres.git"
+repo_url: "https://github.com/aulasoftwarelibre/plantilla-talleres"
 
 copyright: Copyleft - CC BY-NC 4.0 - Aula de Software Libre
 
