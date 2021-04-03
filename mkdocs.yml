@@ -17,8 +17,7 @@ theme:
   name: "material"
   language: "es"
   palette:
-    - scheme: slate
-      accent: indigo
+    scheme: slate
 
 plugins:
   - awesome-pages

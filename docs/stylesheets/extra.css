@@ -19,3 +19,7 @@ img {
   --md-primary-fg-color--light: rgb(123, 136, 204);
   --md-primary-fg-color--dark: #34091a;
 }
+
+* {
+  --md-typeset-a-color: rgb(123, 136, 204);
+}
