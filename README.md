@@ -50,7 +50,7 @@ Una vez creado el repositorio siga las siguientes instrucciónes para configurar
 
 Tras esto recibiras una salida por consola con una ip a tu localhost como esta:
 
-    Serving on http://127.0.0.1:8000/aulasoftwarelibre/taller-de-introduccion-a-linux/
+    Serving on http://127.0.0.1:8000/tu-nombre-de-usuario/nombre-del-repositorio-creado/
 
 Simplemente pulsa Crtl y haz click y te redireccionará al curso. Ahora solo tienes que modificar los ficheros .md haciendo uso del lenguaje markdown.
 
