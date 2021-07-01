@@ -18,7 +18,7 @@ Una vez creado el repositorio siga las siguientes instrucciónes para configurar
 
 1º Clonar el repositorio en tu equipo local introduciendo el siguiente comando en la consola:
 
-    git clone https://github.com/aulasoftwarelibre/taller-de-introduccion-a-linux.git
+    git clone https://github.com/tu-nombre-de-usuario/nombre-del-repositorio-creado
 
 2º Accede a la carpeta desde la consola:
 
