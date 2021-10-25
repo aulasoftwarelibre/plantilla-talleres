@@ -45,7 +45,7 @@ markdown_extensions:
   - attr_list: ~
   - codehilite:
       guess_lang: false
-      linenums: true
+      linenums: false
   - def_list: ~
   - footnotes: ~
   - toc:
