@@ -17,13 +17,41 @@ theme:
   name: "material"
   language: "es"
   palette:
-    scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 plugins:
   - awesome-pages
   - git-revision-date-localized:
       type: date
   - search
+
+markdown_extensions:
+  - admonition: ~
+  - attr_list: ~
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - def_list: ~
+  - footnotes: ~
+  - md_in_html: ~
+  - tables: ~
+  - toc:
+      permalink: true
+  - pymdownx.details: ~
+  - pymdownx.superfences: ~
+  - pymdownx.keys: ~
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
@@ -39,22 +67,8 @@ extra:
       link: "https://instagram.com/aulasoftwarelibre"
     - icon: fontawesome/brands/youtube
       link: "https://www.youtube.com/c/AulaSoftwareLibre"
-
-markdown_extensions:
-  - admonition: ~
-  - attr_list: ~
-  - codehilite:
-      guess_lang: false
-      linenums: false
-  - def_list: ~
-  - footnotes: ~
-  - toc:
-      permalink: true
-  - pymdownx.keys: ~
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-
-google_analytics:
-  - "UA-51754922-1"
-  - "auto"
+    - icon: fontawesome/brands/linkedin
+      link: "https://www.linkedin.com/company/aulasoftwarelibre/"
+  analytics:
+    provider: google
+    property: UA-51754922-1

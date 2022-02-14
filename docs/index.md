@@ -1,6 +1,9 @@
 # Plantilla de talleres
 
-![Aula Software Libre de la UCO](images/logo-cuadrado-invertido.svg)
+<figure markdown>
+  ![Aula Software Libre de la UCO](images/logo-cuadrado.svg#only-light)
+  ![Aula Software Libre de la UCO](images/logo-cuadrado-invertido.svg#only-dark)
+</figure>
 
 Esta plantilla se puede usar para documentar los talleres y actividades del [Aula de Software Libre de la
 Universidad de Córdoba](https://www.uco.es/aulasoftwarelibre).
