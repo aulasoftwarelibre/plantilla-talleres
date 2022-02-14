@@ -12,43 +12,31 @@
 
 Esta plantilla se puede usar para documentar los talleres y actividades del [Aula de Software Libre de la Universidad de Córdoba](https://www.uco.es/aulasoftwarelibre).
 
-Simplemente usa el botón "Use this template" en vez de clonar el repositorio desde Github.
+Simplemente usa el botón [Use this template](https://github.com/aulasoftwarelibre/plantilla-talleres/generate) en vez de clonar el repositorio desde Github.
 
 Una vez creado el repositorio siga las siguientes instrucciónes para configurar el entorno: 
 
-1º Clonar el repositorio en tu equipo local introduciendo el siguiente comando en la consola:
+1. Clonar el repositorio en tu equipo local introduciendo el siguiente comando en la consola:
 
-    git clone https://github.com/tu-nombre-de-usuario/nombre-del-repositorio-creado
+        git clone https://github.com/tu-nombre-de-usuario/nombre-del-repositorio-creado
 
-2º Accede a la carpeta desde la consola:
+1. Accede a la carpeta desde la consola:
 
-    cd taller-de-introduccion-a-linux/
+        cd taller-de-introduccion-a-linux/
 
-3º Configura el entorno para ello instalamos pip un gestor de paquetes de python:
+1. Configura el entorno para ello instalamos [poetry](https://python-poetry.org/) un gestor de paquetes de python:
 
-    sudo apt-get install python3-pip
-    
-4º Instalamos virtualenv que nos permitirá generar un entorno virtual con los requisitos necesarios y que no entre en conflicto con otros proyectos:
+        curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
-    sudo pip3 install virtualenv  
+1. Instalamos los requisitos:
 
-5º Creamos el entorno virtual:
+        poetry install
 
-    python3 -m venv venv 
-    
-6º Accedemos al entorno virtual:
+1. Levantamos el "servidor" de mkdocs para ver los cambios en tiempo real:
 
-    source venv/bin/activate 
+        poetry run mkdocs serve  
 
-7º Instalamos los requisitos:
-
-    pip install -r requirements.txt 
-
-8º Levantamos el "servidor" de mkdocs para ver los cambios en tiempo real:
-
-    mkdocs serve  
-
-Tras esto recibiras una salida por consola con una ip a tu localhost como esta:
+Tras esto recibiras una salida por consola con una ip a tu localhost similar esta:
 
     Serving on http://127.0.0.1:8000/tu-nombre-de-usuario/nombre-del-repositorio-creado/
 
