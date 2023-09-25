@@ -1,17 +1,28 @@
+# Project information
 site_name: "Plantilla de talleres"
-site_author: "Aula de Software Libre <aulasoftwarelibre@uco.es>"
-site_description: "Plantilla para crear documentación de los talleres del aula"
 site_url: "https://github.com/aulasoftwarelibre/plantilla-talleres"
+site_author: "Aula de Software Libre <aulasoftwarelibre@uco.es>"
+site_description: >-
+  Plantilla para crear documentación de los talleres del aula
 
+# Repository information
 repo_name: "aulasoftwarelibre/plantilla-talleres"
 repo_url: "https://github.com/aulasoftwarelibre/plantilla-talleres"
 
+# License
 copyright: Copyleft - CC BY-NC 4.0 - Aula de Software Libre
 
+# Configuration
 theme:
   favicon: "images/logoasl.png"
   features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
     - navigation.instant
+    - navigation.footer
+    - navigation.tracking
   icon:
     logo: material/git
   name: "material"
@@ -28,33 +39,6 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
-plugins:
-  - awesome-pages
-  - git-revision-date-localized:
-      type: date
-  - search
-
-markdown_extensions:
-  - admonition: ~
-  - attr_list: ~
-  - codehilite:
-      guess_lang: false
-      linenums: false
-  - def_list: ~
-  - footnotes: ~
-  - md_in_html: ~
-  - tables: ~
-  - toc:
-      permalink: true
-  - pymdownx.details: ~
-  - pymdownx.superfences: ~
-  - pymdownx.keys: ~
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-
-extra_css:
-  - stylesheets/extra.css
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -72,3 +56,60 @@ extra:
   analytics:
     provider: google
     property: UA-51754922-1
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - git-revision-date-localized:
+      type: date
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+  - toc:
+      permalink: true
+
+# Page tree
+nav:
+  - Inicio: index.md
+  - Otra seccion:
+    - Otra pagina: other.md
