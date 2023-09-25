@@ -10,6 +10,8 @@
 
 </div>
 
+## Instalación
+
 Esta plantilla se puede usar para documentar los talleres y actividades del [Aula de Software Libre de la Universidad de Córdoba](https://www.uco.es/aulasoftwarelibre).
 
 Simplemente usa el botón [Use this template](https://github.com/aulasoftwarelibre/plantilla-talleres/generate) en vez de clonar el repositorio desde Github.
@@ -41,6 +43,10 @@ Tras esto recibiras una salida por consola con una ip a tu localhost similar est
     Serving on http://127.0.0.1:8000/tu-nombre-de-usuario/nombre-del-repositorio-creado/
 
 Simplemente pulsa Crtl y haz click y te redireccionará al curso. Ahora solo tienes que modificar los ficheros .md haciendo uso del lenguaje markdown.
+
+## Uso
+
+Edita el fichero mkdocs.yml. Especialmente las secciones de información al inicio y navegación al final.
 
 ## Licencia
 
