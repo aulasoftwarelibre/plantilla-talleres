@@ -12,7 +12,7 @@ python = "^3.9"
 Markdown = "^3.3.6"
 mkdocs = "^1.2.3"
 mkdocs-git-revision-date-localized-plugin = "^1.2.0"
-mkdocs-material = {extras = ["all"], version = "^9.5.4"}
+mkdocs-material = {extras = ["imaging"], version = "^9.5.4"}
 mkdocs-material-extensions = "^1.2"
 mkdocs-pandoc = "^0.2.6"
 pymdown-extensions = "^10.3"
