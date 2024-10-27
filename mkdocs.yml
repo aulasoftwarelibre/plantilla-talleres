@@ -60,7 +60,7 @@ extra:
       link: "https://www.linkedin.com/company/aulasoftwarelibre/"
   analytics:
     provider: google
-    property: UA-51754922-1
+    property: G-J34JHTH25G
 
 extra_css:
   - stylesheets/extra.css
