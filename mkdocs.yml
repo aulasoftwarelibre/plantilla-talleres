@@ -1,6 +1,7 @@
 # Project information
 site_name: "Plantilla de talleres"
-site_url: "https://github.com/aulasoftwarelibre/plantilla-talleres"
+# This must be the public url in github pages
+site_url: "https://aulasoftwarelibre.github.io/plantilla-talleres/"
 site_author: "Aula de Software Libre <aulasoftwarelibre@uco.es>"
 site_description: >-
   Plantilla para crear documentación de los talleres del aula
